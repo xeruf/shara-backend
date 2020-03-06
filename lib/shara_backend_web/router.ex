@@ -17,6 +17,9 @@ defmodule SharaBackendWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/offers", OffersController, :index
+    get "/profile", UserController, :index
+    get "/profile/:name", UserController, :show
   end
 
   # Other scopes may use custom stacks.
