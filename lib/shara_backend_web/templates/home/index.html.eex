@@ -1,6 +1,7 @@
 <section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>A productive web framework that<br/>does not compromise speed or maintainability.</p>
+  <h1><%= gettext "Welcome to %{name}!", name: "Shara" %></h1>
+  <p><%= gettext "Effortlessly share & sell within your communities!" %></p>
+  <a href="<%= Routes.offers_path(@conn, :index) %>"><%= gettext "Offers" %></a>
 </section>
 
 <section class="row">

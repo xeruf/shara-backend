@@ -1,4 +1,4 @@
-defmodule SharaBackendWeb.PageController do
+defmodule SharaBackendWeb.HomeController do
   use SharaBackendWeb, :controller
 
   def index(conn, _params) do

@@ -16,8 +16,8 @@ defmodule SharaBackendWeb.Router do
   scope "/", SharaBackendWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
-    get "/offers", OffersController, :index
+    get "/", HomeController, :index
+    resources "/offers", OffersController
     get "/profile", UserController, :index
     get "/profile/:name", UserController, :show
   end
