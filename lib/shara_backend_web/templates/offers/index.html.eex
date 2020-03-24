@@ -1,3 +1,6 @@
 <div class="phx-hero">
-  <h2>No offers yet!</h2>
+  <%= for key <- @offers do %>
+    <p><%= key.name <> " " <> gettext("costs") <> " " <> to_string(key.price) %></p>
+  <% end %>
+  <a href="<%= Routes.offers_path(@conn, :new) %>"><%= gettext "Create offer" %></a>
 </div>
