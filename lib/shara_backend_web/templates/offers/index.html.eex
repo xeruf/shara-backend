@@ -1,9 +1,9 @@
 <div class="phx-hero">
-  <a href="<%= Routes.offers_path(@conn, :new) %>"><%= gettext "Create offer" %></a>
+  <a class="button" href="<%= Routes.offers_path(@conn, :new) %>"><%= gettext "Create offer" %></a>
   <br>
   <%= for offer <- @offers do %>
     <br>
-    <a href="<%= Routes.offers_path(@conn, :show, offer.id) %>"><%= offer.name <> " - " <> gettext("Price") <> ": " <> to_string(offer.price) %></a>
-		<%= link "Delete", to: Routes.offers_path(@conn, :delete, offer.id), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+    <a class="button button-outline" href="<%= Routes.offers_path(@conn, :show, offer.id) %>"><%= offer.name <> " - " <> gettext("Price") <> ": " <> to_string(offer.price) %></a>
+		<%= link "✖", to: Routes.offers_path(@conn, :delete, offer.id), method: :delete, data: [confirm: "Are you sure?"], class: "button button-clear" %>
   <% end %>
 </div>
