@@ -1,0 +1,14 @@
+readme
+git
+
+# project
+config
+mix
+translations
+
+# code
+routing
+view
+controllers
+channels
+data
