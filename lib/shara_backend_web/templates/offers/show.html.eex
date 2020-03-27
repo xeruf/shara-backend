@@ -1,3 +1,4 @@
 <div class="phx-hero">
+	<a href="<%= Routes.offers_path(@conn, :index) %>"><- Back</a>
   <h2>This is the offer <%= @offer.name %>, priced at <%= @offer.price %>.</h2>
 </div>
