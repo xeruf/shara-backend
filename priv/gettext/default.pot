@@ -24,3 +24,13 @@ msgstr ""
 #: lib/shara_backend_web/templates/home/index.html.eex:4
 msgid "Offers"
 msgstr ""
+
+#, elixir-format
+#: lib/shara_backend_web/templates/offers/index.html.eex:2
+msgid "Create offer"
+msgstr ""
+
+#, elixir-format
+#: lib/shara_backend_web/templates/offers/index.html.eex:6
+msgid "Price"
+msgstr ""

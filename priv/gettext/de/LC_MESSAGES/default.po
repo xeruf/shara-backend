@@ -25,3 +25,13 @@ msgstr "Hier kannst du ganz einfach Sachen teilen & loswerden, indem du dich mit
 #: lib/shara_backend_web/templates/home/index.html.eex:4
 msgid "Offers"
 msgstr "Angebote"
+
+#, elixir-format
+#: lib/shara_backend_web/templates/offers/index.html.eex:2
+msgid "Create offer"
+msgstr "Angebot erstellen"
+
+#, elixir-format
+#: lib/shara_backend_web/templates/offers/index.html.eex:6
+msgid "Price"
+msgstr "Preis"
