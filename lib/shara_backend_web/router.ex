@@ -18,8 +18,7 @@ defmodule SharaBackendWeb.Router do
 
     get "/", HomeController, :index
     resources "/offers", OffersController
-    get "/profile", UserController, :index
-    get "/profile/:name", UserController, :show
+    resources "/user", UserController
   end
 
   # Other scopes may use custom stacks.
