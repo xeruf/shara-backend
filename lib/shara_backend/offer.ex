@@ -16,5 +16,6 @@ defmodule SharaBackend.Offer do
     offer
     |> cast(attrs, [:name, :img, :price])
     |> validate_required([:name, :price])
+    |> validate_number(:price, greater_than: 0)
   end
 end
